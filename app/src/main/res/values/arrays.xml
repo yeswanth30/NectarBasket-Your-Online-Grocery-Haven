@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="indian_states_array">
+        <item>Andhra Pradesh</item>
+        <item>Arunachal Pradesh</item>
+        <item>Assam</item>
+        <item>Bihar</item>
+        <item>Chhattisgarh</item>
+        <item>Goa</item>
+        <item>Gujarat</item>
+        <item>Haryana</item>
+        <item>Himachal Pradesh</item>
+        <item>Jharkhand</item>
+        <item>Karnataka</item>
+        <item>Kerala</item>
+        <item>Madhya Pradesh</item>
+        <item>Maharashtra</item>
+        <item>Manipur</item>
+        <item>Meghalaya</item>
+        <item>Mizoram</item>
+        <item>Nagaland</item>
+        <item>Odisha</item>
+        <item>Punjab</item>
+        <item>Rajasthan</item>
+        <item>Sikkim</item>
+        <item>Tamil Nadu</item>
+        <item>Telangana</item>
+        <item>Tripura</item>
+        <item>Uttar Pradesh</item>
+        <item>Uttarakhand</item>
+        <item>West Bengal</item>
+    </string-array>
+
+    <string-array name="indian_cities_array">
+        <item>Delhi</item>
+        <item>Mumbai</item>
+        <item>Kolkata</item>
+        <item>Chennai</item>
+        <item>Bangalore</item>
+        <item>Hyderabad</item>
+        <item>Pune</item>
+        <item>Ahmedabad</item>
+        <item>Surat</item>
+        <item>Jaipur</item>
+        <item>Lucknow</item>
+        <item>Kanpur</item>
+        <item>Nagpur</item>
+        <item>Indore</item>
+        <item>Thane</item>
+        <item>Bhopal</item>
+        <item>Visakhapatnam</item>
+        <item>Patna</item>
+        <item>Vadodara</item>
+        <item>Ghaziabad</item>
+        <item>Ludhiana</item>
+        <item>Agra</item>
+        <item>Nashik</item>
+        <item>Faridabad</item>
+        <item>Meerut</item>
+        <item>Rajkot</item>
+        <item>Varanasi</item>
+        <item>Srinagar</item>
+        <item>Aurangabad</item>
+        <item>Dhanbad</item>
+        <item>Amritsar</item>
+        <item>Allahabad (Prayagraj)</item>
+        <item>Ranchi</item>
+        <item>Howrah</item>
+        <item>Coimbatore</item>
+        <item>Jabalpur</item>
+        <item>Gwalior</item>
+        <item>Vijayawada</item>
+        <item>Pimpri-Chinchwad</item>
+        <item>Patiala</item>
+        <item>Kota</item>
+        <item>Jalandhar</item>
+        <item>Gorakhpur</item>
+        <item>Warangal</item>
+        <item>Bikaner</item>
+        <item>Noida</item>
+        <item>Jamnagar</item>
+        <item>Bhilai</item>
+        <item>Cuttack</item>
+        <item>Firozabad</item>
+        <item>Kochi</item>
+        <item>Jamshedpur</item>
+        <item>Bhavnagar</item>
+        <item>Dehradun</item>
+        <item>Ajmer</item>
+        <item>Kolhapur</item>
+        <item>Nanded</item>
+        <item>Jhansi</item>
+        <item>Guntur</item>
+        <item>Gulbarga</item>
+        <item>Jammu</item>
+        <item>Ujjain</item>
+        <item>Siliguri</item>
+        <item>Imphal</item>
+        <item>Karnal</item>
+        <item>Bathinda</item>
+        <item>Jalgaon</item>
+        <item>Barasat</item>
+        <item>Tirunelveli</item>
+        <item>Bijapur</item>
+        <item>Purnia</item>
+        <item>Satara</item>
+        <item>Rohtak</item>
+        <item>Anantapur</item>
+        <item>Bharatpur</item>
+        <item>Muzaffarpur</item>
+        <item>Mathura</item>
+        <item>Ongole</item>
+        <item>Bellary</item>
+        <item>Bilaspur</item>
+        <item>Saharanpur</item>
+        <item>Kollam</item>
+        <item>Shahjahanpur</item>
+        <item>Dibrugarh</item>
+        <item>Gandhinagar</item>
+        <item>Berhampur</item>
+        <item>Haldia</item>
+        <item>Bhagalpur</item>
+        <item>Alwar</item>
+        <item>Kannur</item>
+        <item>Bardhaman</item>
+        <item>Bhiwani</item>
+        <item>Kollam</item>
+    </string-array>
+</resources>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@android:color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+    <TextView
+        android:id="@+id/adddd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Address"
+        android:textAlignment="center"
+        android:textColor="#20C073"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/textcompany"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/adddd"
+        android:text="Companyname"
+        android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/redStarCompany"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:textColor="#FF0000"
+            android:layout_toEndOf="@id/textcompany"
+            android:layout_marginStart="4dp"/>
+
+    <EditText
+        android:id="@+id/editcompanyname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textcompany"
+        android:layout_marginTop="8dp"
+        android:hint="Enter Companyname"/>
+
+    <TextView
+        android:id="@+id/textaddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editcompanyname"
+        android:layout_marginTop="16dp"
+        android:text="Address"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/editaddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textaddress"
+        android:layout_marginTop="8dp"
+        android:hint="Enter Address"/>
+
+    <TextView
+        android:id="@+id/textstate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editaddress"
+        android:layout_marginTop="16dp"
+        android:text="State"
+        android:textSize="18sp"/>
+
+        <Spinner
+            android:id="@+id/spinnerState"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textstate"
+            android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/textpincode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerState"
+        android:layout_marginTop="16dp"
+        android:text="Pincode"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/editpincode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textpincode"
+        android:layout_marginTop="8dp"
+        android:inputType="number"
+        android:hint="Enter pincode"/>
+    <TextView
+        android:id="@+id/textcity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editpincode"
+        android:layout_marginTop="16dp"
+        android:text="City"
+        android:textSize="18sp"/>
+
+        <Spinner
+            android:id="@+id/spinnerCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textcity"
+            android:layout_marginTop="8dp"/>
+    <TextView
+        android:id="@+id/textphone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerCity"
+        android:layout_marginTop="16dp"
+        android:text="Phone"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/editphone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textphone"
+        android:layout_marginTop="8dp"
+        android:inputType="number"
+
+        android:hint="Enter Phone"/>
+    <TextView
+        android:id="@+id/textlandmaek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editphone"
+        android:layout_marginTop="16dp"
+        android:text="Landmark"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/editlandmark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textlandmaek"
+        android:layout_marginTop="8dp"
+        android:hint="Enter LandMark"/>
+
+
+    <Button
+        android:id="@+id/btnAddAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editlandmark"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#20C073"
+        android:text="Add Address"/>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnAddAddress"
+            android:layout_marginTop="16dp">
+
+            <EditText
+                android:id="@+id/uyts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Address" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </RelativeLayout>
+</ScrollView>
+
+
+
+
+
+

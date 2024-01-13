@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="15dp"
+    android:layout_marginTop="16dp">
+
+    <!-- RadioButton -->
+    <RadioButton
+        android:id="@+id/radioButtonAddressDetails"
+        android:layout_width="27dp"
+        android:layout_height="29dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@+id/textViewAddressDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/radioButtonAddressDetails"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:id="@+id/llEditDeleteButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@id/textViewAddressDetails"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:id="@+id/btnedit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="20dp"
+            android:text="Edit"
+            android:textColor="#20C073"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/btndelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="20dp"
+            android:textColor="#20C073"
+            android:text="Delete"
+            android:gravity="center" />
+    </LinearLayout>
+</RelativeLayout>
+
+

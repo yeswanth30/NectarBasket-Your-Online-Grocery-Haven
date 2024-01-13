@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Content within ScrollView -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/baseline_keyboard_arrow_left_24" />
+
+
+            <TextView
+                android:id="@+id/headingTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="-6dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="16dp"
+                android:layout_toStartOf="@id/rightIcon12"
+                android:layout_toEndOf="@id/left"
+                android:text="Beverages"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/rightIcon12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/baseline_filter_alt_24" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/boxwhite"
+                android:gravity="center_vertical">
+
+                <!-- Search icon -->
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/baseline_search_24" />
+
+                <!-- Edit Text for search -->
+                <TextView
+                    android:id="@+id/searchbutton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:hint="Search Store"
+                    android:paddingStart="8dp"
+
+                    android:foregroundGravity="center"
+                    android:textColorHint="@color/black" />
+
+                <!--                <TextView-->
+                <!--                    android:layout_width="100dp"-->
+                <!--                    android:layout_height="40dp"-->
+                <!--                    android:text="Search"-->
+                <!--                    android:textAlignment="center"-->
+                <!--                    android:id="@+id/searchbutton2"-->
+                <!--                    android:textColor="@color/white"-->
+                <!--                    android:gravity="center"-->
+                <!--                    android:background="@drawable/rounded_button_background"-->
+                <!--                    android:textSize="20dp"-->
+                <!--                    android:textStyle="bold" />-->
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/sideMenuLayout"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:elevation="100dp"
+                android:visibility="gone"> <!-- Initially hidden -->
+                <RelativeLayout
+                    android:id="@+id/relativeLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:src="@drawable/close" />
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="Filters"
+                        android:textSize="30dp" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/relativeLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/relativeLayout1"
+                    android:layout_marginTop="16dp">
+
+                    <SeekBar
+                        android:id="@+id/priceSeekBar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:max="5000"
+                        android:padding="16dp" />
+
+                    <!-- Add a label for the price range -->
+                    <TextView
+                        android:id="@+id/priceRangeTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/priceSeekBar"
+                        android:layout_marginTop="8dp"
+                        android:text="Price Range: 0 - 5000"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/headingTextView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_below="@id/priceRangeTextView"
+                        android:text="Category"
+                        android:textSize="30dp"
+                        android:textStyle="bold"
+                        />
+
+                    <CheckBox
+                        android:id="@+id/categorycheckBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:layout_below="@id/headingTextView4"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/headingTextView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_below="@id/categorycheckBox"
+                        android:text="Brands"
+                        android:textSize="30dp"
+                        android:textStyle="bold"
+                        />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerView20"
+                        android:layout_width="match_parent"
+                        android:layout_below="@id/headingTextView2"
+                        android:layout_height="wrap_content"
+                        tools:ignore="DuplicateIds" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/relativeLayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/relativeLayout2"
+                    tools:ignore="ExtraText">
+                    android:layout_marginTop="16dp">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SubCategory"
+                        android:textSize="30dp"
+                        android:textStyle="bold"
+                        />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerView21"
+                        android:layout_width="match_parent"
+                        android:layout_below="@id/textView2"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout882"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/relativeLayout1"
+                    android:layout_marginTop="16dp">
+
+
+
+
+                    <!-- Add a label for the price range -->
+
+
+
+
+
+
+
+                    <!--                    <CheckBox-->
+                    <!--                        android:id="@+id/checkBox1"-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_below="@id/headingTextView2"-->
+                    <!--                        android:text="Eggs" />-->
+
+                    <!--                    <CheckBox-->
+                    <!--                        android:id="@+id/checkBox2"-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_below="@id/checkBox1"-->
+                    <!--                        android:layout_marginTop="0dp"-->
+                    <!--                        android:text="Noodles &amp; Pasta" />-->
+
+                    <!--                    <CheckBox-->
+                    <!--                        android:id="@+id/checkBox3"-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_below="@id/checkBox2"-->
+                    <!--                        android:text="Chips &amp; Crips" />-->
+
+                    <!--                    <CheckBox-->
+                    <!--                        android:id="@+id/checkBox4"-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_below="@id/checkBox3"-->
+                    <!--                        android:text="Fast Food" />-->
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/relativeLayout3"
+                    android:layout_marginTop="16dp">
+
+
+
+
+
+
+                    <TextView
+                        android:id="@+id/applyfilter"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="15dp"
+                        android:text="Apply Filter"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_below="@+id/recyclerView21"
+                        android:background="@drawable/button1"
+                        android:textColor="@color/white"
+                        android:padding="12dp"
+                        android:paddingBottom="20dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginBottom="16dp"
+                        tools:ignore="NotSibling" />
+
+
+                </RelativeLayout>
+                <!-- Content for side menu -->
+                <!-- Add your menu items, icons, or any other content here -->
+
+            </RelativeLayout>
+
+            <!-- Heading for RecyclerView1 -->
+            <TextView
+                android:id="@+id/recyclerView1Heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/headingTextView"
+                android:layout_marginTop="50dp"
+
+
+                android:gravity="center_horizontal"
+                android:paddingBottom="50dp"
+                android:text="Brands"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <!-- First Horizontal RecyclerView -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/recyclerView1Heading"
+                android:layout_marginTop="-30dp"
+                android:layout_marginBottom="16dp"
+
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+
+            <!-- Heading for RecyclerView2 -->
+            <TextView
+                android:id="@+id/recyclerView2Heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/recyclerView1"
+
+
+                android:gravity="center_horizontal"
+
+
+                android:paddingBottom="50dp"
+
+                android:text="Sub Category"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!-- Second Horizontal RecyclerView -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/recyclerView2Heading"
+                android:layout_marginTop="-30dp"
+                android:layout_marginBottom="16dp"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+            <!-- Heading for RecyclerView3 -->
+            <TextView
+                android:id="@+id/recyclerView3Heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/recyclerView2"
+
+
+
+                android:gravity="center_horizontal"
+
+                android:paddingTop="10dp"
+
+                android:text="Products"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/recyclerView3Heading">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <!-- Third Horizontal RecyclerView -->
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/recyclerView3Heading"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="16dp"
+                        android:orientation="horizontal"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+                </HorizontalScrollView>
+            </ScrollView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+            <TextView
+                android:id="@+id/headingTextView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+
+                android:layout_below="@id/recyclerView3"
+                android:text="Search Results"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                tools:ignore="NotSibling" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView30"
+                android:layout_width="match_parent"
+                android:layout_below="@id/headingTextView14"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>

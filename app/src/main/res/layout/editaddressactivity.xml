@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@android:color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+    <TextView
+        android:id="@+id/adrd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit Address"
+        android:textAlignment="center"
+        android:textColor="#20C073"
+        android:textSize="18sp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/first1"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/adrd"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/textcompany"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Companyname"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/redStarCompany"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*"
+                android:textColor="#FF0000"
+                android:layout_toEndOf="@id/textcompany"
+                android:layout_marginStart="4dp"/>
+        </RelativeLayout>
+
+    <EditText
+        android:id="@+id/editcompanyname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/first1"
+        android:layout_marginTop="8dp"
+        android:hint="Enter Company Name"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/second2"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editcompanyname"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:id="@+id/textaddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/redStarAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*"
+                android:textColor="#FF0000"
+                android:layout_toEndOf="@id/textaddress"
+                android:layout_marginStart="4dp"/>
+        </RelativeLayout>
+
+    <EditText
+        android:id="@+id/editaddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/second2"
+        android:layout_marginTop="8dp"
+        android:hint="Enter Address"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editaddress"
+            android:id="@+id/second22"
+
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:id="@+id/textstate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="State"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/redStarState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*"
+                android:textColor="#FF0000"
+                android:layout_toEndOf="@id/textstate"
+                android:layout_marginStart="4dp"/>
+        </RelativeLayout>
+
+        <Spinner
+            android:id="@+id/spinnerState"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/second22"
+            android:layout_marginTop="8dp"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/second222"
+
+            android:layout_below="@id/spinnerState"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:id="@+id/textpincode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pincode"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/redStarPincode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*"
+                android:textColor="#FF0000"
+                android:layout_toEndOf="@id/textpincode"
+                android:layout_marginStart="4dp"/>
+        </RelativeLayout>
+
+    <EditText
+        android:id="@+id/editpincode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/second222"
+        android:layout_marginTop="8dp"
+        android:inputType="number"
+        android:hint="Enter Pincode"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/second123"
+            android:layout_below="@id/editpincode"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:id="@+id/textcity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="City"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/redStarCity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*"
+                android:textColor="#FF0000"
+                android:layout_toEndOf="@id/textcity"
+                android:layout_marginStart="4dp"/>
+        </RelativeLayout>
+
+        <Spinner
+            android:id="@+id/spinnerCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/second123"
+            android:layout_marginTop="8dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/retsyh"
+            android:layout_below="@id/spinnerCity"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:id="@+id/textphone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/redStarPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*"
+                android:textColor="#FF0000"
+                android:layout_toEndOf="@id/textphone"
+                android:layout_marginStart="4dp"/>
+        </RelativeLayout>
+
+    <EditText
+        android:id="@+id/editphone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/retsyh"
+        android:hint="Enter Phone (Up to 10 digits only)"
+        android:layout_marginTop="8dp"
+          android:inputType="number"
+     />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/tyuio"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editphone"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:id="@+id/textlandmaek"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Landmark"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/redStarLandmark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*"
+                android:textColor="#FF0000"
+                android:layout_toEndOf="@id/textlandmaek"
+                android:layout_marginStart="4dp"/>
+        </RelativeLayout>
+
+    <EditText
+        android:id="@+id/editlandmark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tyuio"
+        android:layout_marginTop="8dp"
+        android:hint="Enter Landmark"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ytrey"
+            android:layout_below="@id/editlandmark"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:id="@+id/redStarIndicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*"
+                android:textColor="#FF0000"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/extraTextIndicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fields are mandatory"
+                android:textColor="#000000"
+                android:layout_toEndOf="@id/redStarIndicator"
+                android:layout_marginStart="8dp"
+                android:textSize="16sp"/>
+        </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnSaveChanges"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ytrey"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#20C073"
+        android:text="Save Changes"/>
+
+    </RelativeLayout>
+</ScrollView>
+
+
+
